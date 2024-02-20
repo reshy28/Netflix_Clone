@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:netflix/utlis/colors_constant/colors.dart';
+import 'package:netflix/utlis/db.dart';
 import 'package:netflix/utlis/image_constant.dart';
-import 'package:netflix/view/custom_movie_cards/custom_movie_cards.dart';
+import 'package:netflix/view/home_screen/custom_movie_cards/custom_movie_cards.dart';
 
 class homescreen extends StatelessWidget {
   const homescreen({super.key});
@@ -59,7 +60,7 @@ class homescreen extends StatelessWidget {
                     ),
                     Container(
                       child: Text(
-                        "32 in nigeria Today",
+                        "#2 in nigeria Today",
                         style: TextStyle(color: Colorsconstant.mywhite),
                       ),
                     ),
@@ -140,12 +141,43 @@ class homescreen extends StatelessWidget {
           //     ),
           //   ],
           // ),
-          custom_movie_cards(titile: "Preview"),
-          custom_movie_cards(titile: "Continue Watching for Emenalo"),
-          custom_movie_cards(titile: "Popular on netflix"),
-          custom_movie_cards(titile: "Trending Now"),
-          custom_movie_cards(titile: "Top 10 in nigeria"),
-          custom_movie_cards(titile: "My List"),
+          custom_movie_cards(
+            imageList: Dbdata.previewurls,
+            titile: "Preview",
+            iscircular: true,
+            height: 120,
+          ),
+          custom_movie_cards(
+            titile: "continue for watching us",
+            imageList: Dbdata.previewurls,
+            isOPvisible: true,
+            height: 177,
+            Width: 103,
+          ),
+          custom_movie_cards(
+            titile: "My List",
+            imageList: Dbdata.previewurls,
+            height: 170,
+            Width: 103,
+          ),
+          custom_movie_cards(
+            titile: "Favorite",
+            imageList: Dbdata.previewurls,
+            height: 170,
+            Width: 103,
+          ),
+          custom_movie_cards(
+            titile: "Trending Now",
+            imageList: Dbdata.previewurls,
+            height: 200,
+            Width: 140,
+          ),
+          custom_movie_cards(
+            titile: "Popular on Netflix",
+            imageList: Dbdata.previewurls,
+            height: 170,
+            Width: 103,
+          ),
         ],
       ),
     );

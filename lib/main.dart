@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import 'package:netflix/view/comming_soon_screen/commig_soon_screen.dart';
 import 'package:netflix/view/splashscreen/splash_screen.dart';
 
 void main() {

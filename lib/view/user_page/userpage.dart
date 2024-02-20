@@ -72,7 +72,7 @@ class _usersState extends State<users> {
                         ),
                       ),
                       SizedBox(
-                        height: 15,
+                        height: 10,
                       ),
                       Text(
                         Dbdata.users[index]["name"]!,
@@ -81,12 +81,15 @@ class _usersState extends State<users> {
                     ],
                   ),
                 )
-              : Container(
-                  height: 200,
-                  width: 200,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage(imageconstant.addbotton),
+              : InkWell(
+                  onTap: () {},
+                  child: Container(
+                    height: 80,
+                    width: 100,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage(imageconstant.addbotton),
+                      ),
                     ),
                   ),
                 ),
