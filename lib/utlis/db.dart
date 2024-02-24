@@ -10,12 +10,26 @@ class Dbdata {
   ];
 
   static List<String> previewurls = [
-    "https://images.pexels.com/photos/18786711/pexels-photo-18786711/free-photo-of-young-woman-in-a-leather-jacket-standing-on-a-sidewalk-in-city.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/20044471/pexels-photo-20044471/free-photo-of-a-woman-sitting-at-a-table-with-a-mug-and-a-book.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/19933488/pexels-photo-19933488/free-photo-of-a-pastry-with-a-cup-of-coffee-on-a-table.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/18786711/pexels-photo-18786711/free-photo-of-young-woman-in-a-leather-jacket-standing-on-a-sidewalk-in-city.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/20044471/pexels-photo-20044471/free-photo-of-a-woman-sitting-at-a-table-with-a-mug-and-a-book.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://images.pexels.com/photos/19933488/pexels-photo-19933488/free-photo-of-a-pastry-with-a-cup-of-coffee-on-a-table.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    "assets/images/Rectangle 15.png",
+    "assets/images/Rectangle 16.png",
+    "assets/images/Rectangle 17.png",
+    "assets/images/Rectangle 18.png",
+    "assets/images/Rectangle 19.png",
+    "assets/images/Rectangle 12.png",
+    "assets/images/Rectangle 13.png",
+    "assets/images/Rectangle 14.png",
+  ];
+
+  // ignore: non_constant_identifier_names
+  static List<String> continue_for_watching_us = [
+    "assets/images/Rectangle 12.png",
+    "assets/images/Rectangle 13.png",
+    "assets/images/Rectangle 14.png",
+    "assets/images/Rectangle 15.png",
+    "assets/images/Rectangle 16.png",
+    "assets/images/Rectangle 17.png",
+    "assets/images/Rectangle 18.png",
+    "assets/images/Rectangle 19.png",
   ];
 
   static List<Map<String, String>> newarrival = [

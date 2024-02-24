@@ -49,8 +49,8 @@ class custom_movie_cards extends StatelessWidget {
                           : BoxShape.rectangle,
                       color: Colors.amber,
                       image: DecorationImage(
-                          image: NetworkImage(imageList[index]),
-                          fit: BoxFit.cover),
+                          image: AssetImage(imageList[index]),
+                          fit: BoxFit.fill),
                     ),
                     height: height,
                     width: Width,

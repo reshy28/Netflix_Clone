@@ -149,7 +149,7 @@ class homescreen extends StatelessWidget {
           ),
           custom_movie_cards(
             titile: "continue for watching us",
-            imageList: Dbdata.previewurls,
+            imageList: Dbdata.continue_for_watching_us,
             isOPvisible: true,
             height: 177,
             Width: 103,
