@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:netflix/utlis/colors_constant/colors.dart';
 import 'package:netflix/utlis/db.dart';
@@ -14,17 +15,36 @@ class homescreen extends StatelessWidget {
         children: [
           Stack(
             children: [
-              Container(
-                height: 425,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage(
-                        imageconstant.homepageimage,
-                      ),
-                      fit: BoxFit.cover),
-                ),
-              ),
+              ///carrousel
+              // Container(
+              //   height: 425,
+              //   width: double.infinity,
+              //   decoration: BoxDecoration(
+              //     image: DecorationImage(
+              //         image: AssetImage(
+              //           imageconstant.homepageimage,
+              //         ),
+              //         fit: BoxFit.cover),
+              //   ),
+              // ),
+              CarouselSlider(
+                  options: CarouselOptions(
+                    height: 400.0,
+                    autoPlay: true,
+                    autoPlayInterval: Duration(seconds: 4),
+                    enableInfiniteScroll: true,
+                  ),
+                  items: List.generate(
+                      Dbdata.previewurls.length,
+                      (index) => Container(
+                            decoration: BoxDecoration(
+                              image: DecorationImage(
+                                  image: AssetImage(
+                                    Dbdata.previewurls[index],
+                                  ),
+                                  fit: BoxFit.fill),
+                            ),
+                          ))),
               Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 10,
